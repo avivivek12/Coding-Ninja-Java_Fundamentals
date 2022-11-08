@@ -9,15 +9,15 @@ public class Find_Duplicate {
         //Your code goes here
         for (int i = 0; i < arr.length; i++) 
         {
-            int jg=-1;
-            for (int j = 0; j < arr.length; j++) 
+            int jg=0;
+            for (int j = i+1; j < arr.length; j++) 
             {
                     if (arr[i]==arr[j])
                     {
                         jg++;
                     }
             }
-            if (jg>0)
+            if (jg==1)
                 return arr[i];
         }
         return 0;
